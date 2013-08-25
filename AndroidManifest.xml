@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.varunramesh.webwork"
+    android:versionCode="12"
+    android:versionName="1.2.7" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.varunramesh.webwork.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.FindServer"
+            android:label="@string/title_activity_find_server"
+            android:parentActivityName="com.varunramesh.declare.MainActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.varunramesh.declare.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.CourseSelect"
+            android:label="@string/title_activity_course_select"
+            android:parentActivityName="com.varunramesh.webwork.FindServer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.varunramesh.webwork.FindServer" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.varunramesh.declare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.varunramesh.declare.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.CourseView"
+            android:label="@string/title_activity_course_view"
+            android:parentActivityName="com.varunramesh.declare.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.varunramesh.declare.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.ProblemListActivity"
+            android:label="@string/title_problem_list"
+            android:parentActivityName="CourseView"
+            android:configChanges="orientation|screenSize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="CourseView" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.ProblemDetailActivity"
+            android:label="@string/title_problem_detail"
+            android:parentActivityName=".ProblemListActivity"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:configChanges="orientation|screenSize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProblemListActivity" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="com.varunramesh.webwork.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

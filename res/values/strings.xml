@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeBWorK</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_find_server">Find Server</string>
+    <string name="title_activity_course_select">Select a Course</string>
+    <string name="title_activity_course_view">Course View</string>
+    <string name="title_problem_detail">Problem Detail</string>
+    <string name="title_problem_list">Problems</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+</resources>

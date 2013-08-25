@@ -1,0 +1,14 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/problem_list"
+    android:name="com.varunramesh.webwork.ProblemListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".ProblemListActivity"
+   />
+
+
+
+ <!-- tools:layout="list_content" --> 
